@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:foods_app/card1.dart';
+import 'package:foods_app/card2.dart';
+import 'package:foods_app/card3.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -14,11 +17,9 @@ class _HomeState extends State<Home> {
   /// The [List<Widget> pages] when user tap between the different tab bar items,
   /// it shows container widgets of different colors.
   static List<Widget> pages = <Widget>[
-    //TODO replace with card 1
-    Container(color: Colors.red),
-    //TODO replace with card 2
-    Container(color: Colors.green),
-    //TODO replace with card 3
+    const Card1(),
+    const Card2(),
+    const Card3(),
     Container(color: Colors.blue),
   ];
 
